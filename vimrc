@@ -10,6 +10,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'Shougo/neocomplcache.vim'
 Plugin 'vim-scripts/a.vim'
 
 " colorscheme
@@ -30,6 +31,19 @@ map <C-x> :!ctags -R<CR>
 let NERDTreeWinPos = 'left'
 let NERDTreeWinSize = 28
 map <F3> :NERDTreeToggle<CR>
+
+" neocomplcache
+let g:acp_enableAtStartup = 0
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " cpp build
 map <C-a> :call CppBuild()<CR>
