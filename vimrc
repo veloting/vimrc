@@ -24,7 +24,7 @@ filetype plugin indent on
 
 " tagbar
 let g:tagbar_ctags_bin = 'ctags'
-let g:tagbar_width = 30
+let g:tagbar_width = 25
 map <F2> :Tagbar<CR>
 map <C-x> :!ctags -R<CR>
 
@@ -34,25 +34,15 @@ let NERDTreeWinSize = 28
 map <F3> :NERDTreeToggle<CR>
 
 " neocomplcache
-let g:acp_enableAtStartup = 0
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_ignore_case = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_auto_select = 1
-let g:neocomplcache_enable_fuzzy_completion = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_fuzzy_completion_start_length = 1
-let g:neocomplcache_auto_completion_start_length = 1
-let g:neocomplcache_manual_completion_start_length = 1
-let g:neocomplcache_min_keyword_length = 1
-let g:neocomplcache_min_syntax_length = 1
+"let g:acp_enableAtStartup = 0
+"let g:neocomplcache_min_keyword_length = 3
+"let g:neocomplcache_min_syntax_length = 3
 
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+let g:neocomplcache_enable_at_startup = 1
+
+"autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " airline
 let g:airline_powerline_fonts = 0
