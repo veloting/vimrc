@@ -9,10 +9,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/a.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/neocomplcache.vim'
-Plugin 'vim-scripts/a.vim'
+Plugin 'fatih/vim-go'
 
 " colorscheme
 Plugin 'sickill/vim-monokai'
