@@ -38,7 +38,6 @@ map <F3> :NERDTreeToggle<CR>
 "let g:acp_enableAtStartup = 0
 "let g:neocomplcache_min_keyword_length = 3
 "let g:neocomplcache_min_syntax_length = 3
-
 let g:neocomplcache_enable_at_startup = 1
 
 "autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -55,6 +54,19 @@ map <C-a> :call CppBuild()<CR>
 function CppBuild()
     execute "!g++ % -Wall -std=c++11 -ggdb -gdwarf-2 -o %<"
 endfunction
+
+" golang
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
 
 " basic
 syntax on
