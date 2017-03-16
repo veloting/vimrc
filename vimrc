@@ -68,6 +68,9 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 
+au FileType go nmap <leader>w :GoImports<CR>
+au FileType go nmap <leader>s <Plug>(go-implements)
+
 " basic
 syntax on
 syntax enable
