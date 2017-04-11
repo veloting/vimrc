@@ -32,6 +32,7 @@ map <C-x> :!ctags -R<CR>
 " nerdtree
 let NERDTreeWinPos = 'left'
 let NERDTreeWinSize = 28
+let NERDTreeIgnore = ['\.pyc']
 map <F3> :NERDTreeToggle<CR>
 
 " neocomplcache
