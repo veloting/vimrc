@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " colorscheme
 Plugin 'sickill/vim-monokai'
@@ -75,6 +76,7 @@ au FileType go nmap <leader>s <Plug>(go-implements)
 " basic
 syntax on
 syntax enable
+
 set completeopt=longest,menu
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set number
@@ -91,9 +93,6 @@ set cinoptions=g0
 set hlsearch
 set incsearch
 
-" folding
-set foldmethod=syntax
-set foldlevel=99
 nnoremap <space> za
 
 " colorscheme
