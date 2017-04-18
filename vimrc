@@ -12,7 +12,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/a.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Shougo/neocomplcache.vim'
+"Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
@@ -40,7 +41,7 @@ map <F3> :NERDTreeToggle<CR>
 "let g:acp_enableAtStartup = 0
 "let g:neocomplcache_min_keyword_length = 3
 "let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_at_startup = 1
 
 "autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 "autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
