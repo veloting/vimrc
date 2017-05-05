@@ -6,21 +6,19 @@ call vundle#begin()
 
 " tool
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'majutsushi/tagbar'
+"Plugin 'tpope/vim-sensible'
+"Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/a.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-scripts/a.vim'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'Shougo/neocomplcache.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " colorscheme
-Plugin 'sickill/vim-monokai'
+"Plugin 'sickill/vim-monokai'
 Plugin 'notpratheek/vim-luna'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
@@ -34,14 +32,13 @@ map <C-x> :!ctags -R<CR>
 " nerdtree
 let NERDTreeWinPos = 'left'
 let NERDTreeWinSize = 28
-let NERDTreeIgnore = ['\.pyc']
 map <F3> :NERDTreeToggle<CR>
 
 " neocomplcache
 "let g:acp_enableAtStartup = 0
 "let g:neocomplcache_min_keyword_length = 3
 "let g:neocomplcache_min_syntax_length = 3
-"let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 1
 
 "autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 "autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
@@ -77,7 +74,6 @@ au FileType go nmap <leader>s <Plug>(go-implements)
 " basic
 syntax on
 syntax enable
-
 set completeopt=longest,menu
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set number
@@ -94,7 +90,10 @@ set cinoptions=g0
 set hlsearch
 set incsearch
 
-nnoremap <space> za
+" folding
+"set foldmethod=syntax
+"set foldlevel=99
+"nnoremap <space> za
 
 " colorscheme
 set t_Co=256
